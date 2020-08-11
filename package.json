@@ -1,16 +1,22 @@
 {
   "name": "img-zoom",
   "version": "0.1.0",
+  "description": "image zoom",
   "private": true,
+  "main": "dist/img-zoom.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "buildDemo": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib  ./lib/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
+  "repository": "https://github.com/cyyjs/img-zoom",
+  "author": "cyyjs",
+  "license": "MIT",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
