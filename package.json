@@ -8,13 +8,16 @@
     "serve": "vue-cli-service serve",
     "buildDemo": "vue-cli-service build",
     "build": "vue-cli-service build --target lib  ./lib/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "doc:deploy": "yarn buildDemo && gh-pages -d demo"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": "https://github.com/cyyjs/img-zoom",
   "author": "cyyjs",
   "license": "MIT",
@@ -25,6 +28,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "gh-pages": "^3.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
