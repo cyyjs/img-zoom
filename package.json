@@ -8,8 +8,7 @@
     "serve": "vue-cli-service serve",
     "buildDemo": "vue-cli-service build",
     "build": "vue-cli-service build --target lib  ./lib/index.js",
-    "lint": "vue-cli-service lint",
-    "doc:deploy": "yarn buildDemo && gh-pages -d demo"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
