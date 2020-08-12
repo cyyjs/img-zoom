@@ -3,5 +3,7 @@
 /demo
 /lib
 /examples
-.vue.config.js
+vue.config.js
 babel.config.js
+.github
+public
