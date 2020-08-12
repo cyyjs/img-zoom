@@ -7,9 +7,8 @@
 ```js
 import Vue from 'vue'
 import App from './App.vue'
-import imgZoom from '../lib'
+import imgZoom from '@cyyjs/vue-img-zoom'
 
-Vue.config.productionTip = false
 Vue.use(imgZoom)
 
 new Vue({
@@ -17,7 +16,20 @@ new Vue({
 }).$mount('#app')
 ```
 
-### 绑定指令
+### 组件内引入
+```js
+import { imgZoomFn } from '@cyyjs/vue-img-zoom'
+export default {
+  name: 'components',
+  directives: {
+    locallyImgZoom: {
+      inserted: imgZoomFn
+    }
+  }
+}
+```
+
+## 绑定指令
 ```html
 <img v-img-zoom src="./assets/demo.jpg"/>
 ```

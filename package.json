@@ -1,6 +1,6 @@
 {
   "name": "@cyyjs/vue-img-zoom",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "image zoom",
   "private": false,
   "main": "dist/img-zoom.umd.min.js",
